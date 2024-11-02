@@ -1,0 +1,235 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+/* Estilos específicos para la sección encabezado */
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+/* -------------------------------------------*/
+
+
+
+/* Estilos específicos para la sección "Sobre Mí" */
+.sobre-mi-contenedor {
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
+    margin: 20px auto;
+    max-width: 800px;
+}
+#sobre-mi h2{
+    text-align: center; 
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.foto-perfil {
+    max-width: 200px; 
+    height: auto; 
+    border-radius: 40%;
+}
+
+.info-perfil {
+    flex: 1;
+}
+
+/*--------------------------------------*/
+
+/* Estilos específicos para la sección "Proyectos" */
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+#proyectos h2 {
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 32px;
+    color: #007BFF;
+}	
+
+#proyectos {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.proyecto {
+    margin-bottom: 50px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.proyecto h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.proyecto p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+
+.proyecto-tabla {
+    margin-top: 20px;
+}
+
+.proyecto-tabla table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.proyecto-tabla th{
+    padding: 15px;
+    text-align: center;
+    border: 2px solid #eeeeed;
+}
+
+.proyecto-tabla th {
+    background-color: #096cee;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.proyecto-tabla td img {
+    max-width: 88%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #eeeeed;
+}
+
+.proyecto-tabla tr:nth-child(even) {
+    background-color: #4dc0ee;
+}
+.proyecto-tabla tr:hover {
+    background-color: #9da3f3;
+}
+
+
+
+/*-----------------------------------------------*/
+
+/* Estilos específicos para la sección "Experiencia" */
+
+#experiencia {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+#experiencia h2 {
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 32px;
+    color: #007BFF;
+}
+.imagenes-par {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.imagenes-par img {
+    max-width: 35%; /* Asegura que las imágenes no excedan el tamaño del contenedor */
+    height: auto;
+}
+
+
+
+
+
+
+
+/*-----------------------------------------------*/
+
+/* Estilos específicos para la sección "Contacto" */
+
+#contacto {
+    margin: 50px auto;
+    max-width: 600px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#contacto h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#contacto p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.contacto-enlaces {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacto-link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease-in-out;
+}
+
+.contacto-link img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contacto-link:hover {
+    color: #0056b3;
+}
+
+.contacto-link:hover img {
+    transform: scale(1.2);
+}
+
+/*-----------------------------------------------*/
+
+/* Estilos específicos para el footer */
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

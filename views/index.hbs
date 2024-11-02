@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Ingeniero de Software</title>
+    <link rel="stylesheet" href="/assets/CSS/style.css">
+    <link rel="stylesheet" href="/assets/CSS/normalize.css">
+</head>
+<body>
+    {{> header}}
+
+    <!-- Contenido de la sección "Sobre Mí" -->
+    <section id="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <div class="sobre-mi-contenedor">
+            <img src="/assets/image/Brandon.jpg" alt="Foto de Brandon Israel Chiroy Tuy" class="foto-perfil">
+            <div class="info-perfil">
+                <p>
+                    Hola, soy BRANDON ISRAEL CHIROY TUY, estudiante de Ingenieria en Sistemas de Informacion y Ciencias de la 
+                    Computacion, en la Universidad Mariano Galvez de Guatemala, curos el ultimo semestre de la carrera en este 2024,
+                    actualmente tengo 23 años de edad,                
+                </p>
+                <p>
+                    Durante mi carrera, he trabajado en diversos proyectos que abarcan desde el desarrollo de plataformas webs hasta aplicaciones móviles 
+                    para la gestión de finanzas personales como son los sistemas de gestión de inventario y venta para puntos de ventas. 
+                    Tengo experiencia en el uso de javascript y ASP.net, además de experiencia en frameworks como React y Vue.js.
+                </p>
+                <p>
+                    Estoy interesado en seguir explorando el desarrollo de soluciones innovadoras en el ámbito de la inteligencia artificial y la automatización de procesos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenido de la sección "Proyectos" -->
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="proyecto">
+            <h3>Proyecto 1</h3>
+            <p>
+                Sistemas web para gestión de inventario y venta de productos para una ferretería, agilizando procesos y 
+                simplificando la gestión de productos, proveedores y clientes, realizando varios módulos, como la de administración de usuarios y accesos,
+                módulo de inventario donde se gestionan los productos, las compras e ingreso también en ese módulo se gestionan los proveedores. 
+                En el módulo de venta se gestionan los egresos de los productos y los clientes. 
+            </p>
+            <h3>Herramientas utilizadas</h3>
+            <p>
+                Las herramientas utilizadas para construir este proyecto fueron: Visual code, Visual Studio, HTML, CSS, JavaScript, ASP.net, SQL Server y 
+                GitHub para el control de versiones, también se implementaron frameworks como Vue.js y reactivity.
+            </p>
+        </div>     
+    </section>
+
+    <!-- Contenido de la sección "Experiencia" -->
+    <section id="experiencia">
+        <h2>Experiencia</h2>
+        <p> 
+            Estudiante de ingeniería en sistema de información y Ciencias de la Computación, en la Universidad Mariano Galvez de Guatemala
+            se aprendió a trabajar en equipo y organizarse de manera eficiente, implementando la metodología SCRUM.
+        </p>
+        <ul>
+            <li><strong>Certificación:</strong> Certificación de diseño web con HTML, CSS de Google.</li>
+            <li><strong>Educación:</strong> Graduado en Bachillerato en ciencias y letras y estudiante de Ingeniería en Sistemas de Información 
+                y Ciencias de la Computación.</li>
+        </ul>
+    </section>
+
+    <!-- Contenido de la sección "Contacto" -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Puedes ponerte en contacto conmigo a través de los siguientes enlaces:</p>
+        <div class="contacto-enlaces">
+            <a href="mailto:brandon.ch1245@gmail.com" class="contacto-link">
+                <img src="/assets/image/gmail2.png" alt="">
+                Correo Electrónico
+            </a>
+            <a href="https://linkedin.com/in/brandon-chiroy-t-931668285" target="_blank" class="contacto-link">
+                <img src="/assets/image/Linke.png" alt="">
+                LinkedIn
+            </a>
+            <a href="https://github.com/ChiroyB" target="_blank" class="contacto-link">
+                <img src="/assets/image/git.webp" alt="">
+                GitHub
+            </a>
+        </div>
+    </section>
+
+    {{> footer}}
+</body>
+</html>
