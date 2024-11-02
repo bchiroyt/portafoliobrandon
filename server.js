@@ -1,9 +1,12 @@
+require('dotenv').config();
+
 const express = require('express');
 const { engine } = require('express-handlebars');
 const path = require('path');
 
+
 const app = express();
-const PORT = process.env.PORT || 3000;
+const port = process.env.PORT
 
 // Configuración de Handlebars
 app.engine('hbs', engine({ extname: '.hbs', defaultLayout: false }));
@@ -31,6 +34,6 @@ app.get('/videos', (req, res) => {
 
 
 // Iniciar el servidor
-app.listen(PORT, () => {
-    console.log(`Servidor corriendo en http://localhost:${PORT}`);
+app.listen(port, () => {
+    console.log(`Servidor corriendo en http://localhost:${port}`);
 });
