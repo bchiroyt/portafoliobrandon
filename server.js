@@ -1,39 +1,37 @@
 require('dotenv').config();
 
 const express = require('express');
-const { engine } = require('express-handlebars');
+const hbs = require('hbs');
 const path = require('path');
 
-
 const app = express();
-const port = process.env.PORT
+const port = process.env.PORT || 3000;
 
 // Configuración de Handlebars
-app.engine('hbs', engine({ extname: '.hbs', defaultLayout: false }));
 app.set('view engine', 'hbs');
+app.set('views', path.join(__dirname, 'views'));
+hbs.registerPartials(path.join(__dirname, 'views/Partials'));
 
-// Middleware para servir archivos estáticos
+// Configuración de archivos estáticos
 app.use(express.static(path.join(__dirname, 'Public')));
 
 // Rutas
 app.get('/', (req, res) => {
-    res.render('sobre-mi'); // Página principal
+    res.render('sobre-mi');
 });
 
 app.get('/proyectos', (req, res) => {
-    res.render('proyectos'); // Página de proyectos
+    res.render('proyectos');
 });
 
 app.get('/experiencia', (req, res) => {
-    res.render('experiencia'); // Página de experiencia
+    res.render('experiencia');
 });
 
 app.get('/videos', (req, res) => {
     res.render('videos');
 });
 
-
-// Iniciar el servidor
 app.listen(port, () => {
-    console.log(`Servidor corriendo en http://localhost:${port}`);
+    console.log(`Servidor corriendo en puerto ${port}`);
 });
